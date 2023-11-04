@@ -1,0 +1,33 @@
+.nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    position: fixed; /* Fix the navigation bar at the top */
+    top: 0; /* Position it at the top of the page */
+    left: 0; /* Position it at the left of the page */
+    width: 100%; /* Make it full-width */
+    z-index: 1; /* Set a high z-index to ensure it's on top of other content */
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+  }
+  
+  .logo {
+    max-height: 50px; /* Adjust the maximum height as needed */
+    padding: 10px;
+    object-fit: contain; /* Add padding to the logo for spacing */
+  }
+  .avatar{
+    position: fixed;
+    object-fit: contain;
+    width: 60px;
+    height: 80px;
+    object-fit: contain;
+    top:0;
+    right: 10px;
+    padding: 1px;
+
+  }
+  .nav_black{
+    background: rgba(0, 0, 0, 1.1); /* Add a semi-transparent background color */
+
+  }

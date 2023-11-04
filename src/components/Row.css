@@ -1,0 +1,73 @@
+
+.row__posters {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1rem 0;
+  gap: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.4) transparent;
+  white-space: nowrap;
+  
+}
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+.row {
+  margin: 0;
+  padding: 1rem;
+}
+
+.row__title {
+  font-size: 2rem; /* Increase font size for a more prominent heading */
+  font-weight: 800;
+  margin-bottom: 1rem;
+  font-family: "Your Custom Font", sans-serif; /* Replace 'Your Custom Font' with the desired font family */
+  color: #d6cbcb; /* Adjust the color as needed */
+  text-transform: uppercase; /* Uppercase text for emphasis */
+}
+
+.row_poster {
+  object-fit: contain;
+  margin-right: 10px;
+  max-height: 150px;
+  width: 80%;
+}
+
+/* Add this CSS to your component's stylesheet or a separate stylesheet file */
+
+/* Glowing Hover Effect */
+.row__posters img:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 60px rgba(34, 33, 31, 0.8);
+  transition: filter 0.5s, box-shadow 0.3s, transform 450ms;
+}
+
+/* Additional Styling */
+.row__posters img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.4s, filter 0.4s, box-shadow 0.3s;
+  border-radius: 10px;
+}
+
+/* Zoom In on Hover */
+.row__posters img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+.row__posters img:active {
+  transform: scale(0.98);
+}
+
+.row_posterLarge {
+  max-height: 300px;
+  transition: transform 0.4s;
+}
+.row_posterLarge img:hover {
+  transform: scale(1.1);
+  filter: brightness(1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
